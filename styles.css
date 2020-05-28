@@ -1,0 +1,67 @@
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url(images/anime_sky_scenery.png);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
+    font-size: 40px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.memory-card{
+    animation-name:fadeIn;
+}
+
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
