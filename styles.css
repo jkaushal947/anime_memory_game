@@ -22,8 +22,12 @@ p {
     margin: 5px;
 }
 
-img{
-    width:100px;
+img {
+    width: 100px;
+}
+
+.container {
+    margin-bottom: 50em;
 }
 
 .memory {
@@ -33,15 +37,17 @@ img{
 .memory-game {
     width: 600px;
     height: 600px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
     border-radius: 15px;
+    margin-bottom: 50em;
 }
 
 .memory-card {
-    width: calc(28% - 70px);
+    width: calc(30% - 70px);
     height: calc(30% - 30px);
     margin: 5px;
     position: relative;
