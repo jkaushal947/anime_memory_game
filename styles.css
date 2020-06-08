@@ -8,9 +8,9 @@ h1 {
     font-family: 'Indie Flower', cursive;
     color: aliceblue;
     font-size: 30px;
-    word-spacing: 1px;
+    word-spacing: px;
     letter-spacing: 2px;
-    margin: 5px;
+    margin: 10px;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -19,14 +19,12 @@ p {
     font-family: 'Indie Flower', cursive;
     color: aliceblue;
     font-size: 20px;
-    margin: 5px;
-}
-
-img {
-    width: 100px;
+     margin: 10px;
 }
 
 .container {
+    margin: auto;
+    width: 40%;
     margin-bottom: 50em;
 }
 
@@ -35,20 +33,19 @@ img {
 }
 
 .memory-game {
-    width: 600px;
+    width: 90%;
     height: 600px;
-    margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
     border-radius: 15px;
-    margin-bottom: 50em;
+    margin: auto;
 }
 
 .memory-card {
-    width: calc(30% - 70px);
-    height: calc(30% - 30px);
+    width: calc(20% - 30px);
+    height: calc(20% - 10px);
     margin: 5px;
     position: relative;
     transform: scale(1);
